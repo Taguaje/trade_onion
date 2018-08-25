@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Продажа лука оптом</title>
+    {% load staticfiles %}
+    <link rel="icon" type="image/png" href="{% static 'img/logo.png' %}" />
+    <script src="{% static '/bootstrap/js/jquery-3.3.1.min.js' %}"></script>
+    <link rel="stylesheet" href="{% static '/bootstrap/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static '/main/css/main.css' %}">
+    <script src="{% static '/bootstrap/js/bootstrap.js' %}"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&subset=cyrillic');
+        body {
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+    </style>
+</head>
+<body>
+<nav class="nav navbar-expand-md navbar-light bg-light p-4">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav mr-auto" style="font-size: 1.2rem">
+      <li class="nav-item active">
+        <a class="nav-link" href="#shema">Схема работы</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#catalog">Каталог</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#adv">Преимущества</a>
+      </li>
+    </ul>
+    <span class="navbar-text">
+      <h4><a href="tel:+7 (961) 088 95 19">+7(961)-088-95-19</a></h4>
+    </span>
+  </div>
+</nav>
+<div class="container-fluid">
+    <div class="jumbotron jumbotron-fluid main-banner">
+        <div class="container text-center  text-white">
+            <h1 class="display-4">Производство и продажа лука оптом по РФ и СНГ</h1>
+            <p class="lead">Поставим лук оптом от 20т в сетках по 50 кг без гнили и болезней.</p>
+        </div>
+    </div>
+    <h2 class="text-center mb-2">Оставить заявку</h2>
+    <div class="row">
+        <div class="col"></div>
+        <form class="col border-success rounded border p-4">
+            <div class="form-group row align-middle">
+                <label class="col-2" for id="email"><h5>Email</h5></label>
+                <div class="col">
+                    <input type="email" class="form-control" id="email" placeholder="Ваш email">
+                </div>
+            </div>
+            <div class="form-group row align-middle">
+                <label class="col-2" for id="tel"><h5>Телефон</h5></label>
+                <div class="col">
+                    <input type="tel" class="form-control" id="tel" placeholder="Ваш телефон">
+                </div>
+            </div>
+            <div class="text-center"> <button type="submit" class="btn btn-outline-success btn-lg">Оставить заявку</button></div>
+        </form>
+        <div class="col"></div>
+    </div>
+
+    <h2 class="text-center mt-5 mb-2">Схема работы</h2>
+    <div class="text-center" id="shema">
+        <img src="{% static 'img/shema.svg' %}" width="80%">
+    </div>
+    <h2 class="text-center mt-5 mb-2" id="catalog">Каталог товаров</h2>
+    <div class="row">
+        <div class="col-2"></div>
+        <ul class="list-group col-8">
+
+            <li class="list-group-item">
+                <div class="row">
+                    <div class="col">
+                        <img src="{% static '/img/onion-desi-500x500.jpg' %}">
+                    </div>
+                    <div class="col">
+                        <h2>Лук 1</h2>
+                        <p>Описание</p>
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div class="row">
+                    <div class="col">
+                        <img src="{% static '/img/onion-desi-500x500.jpg' %}">
+                    </div>
+                    <div class="col">
+                        <h2>Лук 2</h2>
+                        <p>Описание</p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div class="col-2"></div>
+    </div>
+    <h2 class="text-center mt-5 mb-2" id="adv">Наши приемущества</h2>
+    <div class="row">
+        <div class="col"></div>
+           <div class="col p-4 border border-success rounded" style="font-size: 1.3rem;">
+               <ul >
+                   <li>Работаем оперативно - быстая обработка заявки</li>
+                   <li>Продукция в соответствии с ГОСТ 1723-86</li>
+                   <li>Продукция от производителя</li>
+                   <li>Индивидуальный подход</li>
+               </ul>
+           </div>
+        <div class="col"></div>
+    </div>
+    <footer class="bg-dark text-white mt-5 pb-3 pt-3">
+            <h3 class="text-center">По всем вопросам звоните по телефону:</h3>
+            <h3 class="text-center"><a href="tel:+7 (961) 088 95 19">+7(961)-088-95-19</a></h3>
+    </footer>
+
+
+</div>
+
+</body>
+</html>
